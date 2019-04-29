@@ -1,4 +1,5 @@
-how to build:
+HOW TO BUILD
+----------------------
 
     mkdir build
     cd build
