@@ -4,9 +4,14 @@ project (cmake_cpp_demo)
 # Use c++ 11
 set (CMAKE_CXX_STANDARD 11)
 
-include_directories (${PROJECT_SOURCE_DIR}/third_party/hiredis/include)
-link_directories (${PROJECT_SOURCE_DIR}/third_party/hiredis/lib)
+# Add dependency library
+include_directories (${PROJECT_SOURCE_DIR}/src ${PROJECT_SOURCE_DIR}/src/third_party/hiredis/include)
+link_directories (${PROJECT_SOURCE_DIR}/src/third_party/hiredis/lib)
+
+# Add sub directory
+add_subdirectory (src/hello)
 
 aux_source_directory (src DIR_SRCS)
 add_executable (main ${DIR_SRCS})
-TARGET_LINK_LIBRARIES(main hiredis)
+target_link_libraries(main hiredis)
+target_link_libraries(main hello)

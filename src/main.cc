@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include <hiredis.h>
+#include <hello/hello.h>
 
 int main(int argc, char **argv) {
     unsigned int j, isunix = 0;
@@ -43,6 +44,6 @@ int main(int argc, char **argv) {
 
     /* Disconnects and frees the context */
     redisFree(c);
-
+    hello();
     return 0;
 }
