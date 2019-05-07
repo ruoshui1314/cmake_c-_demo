@@ -12,3 +12,12 @@ HOW TO BUILD
     cmake ..
     make
 
+tips:
+1.How to build with debug and release?
+- release
+
+    cd build && cmake -DCMAKE_BUILD_TYPE=Release ..
+
+- debug
+
+    cd build && cmake -DCMAKE_BUILD_TYPE=DEBUG ..
