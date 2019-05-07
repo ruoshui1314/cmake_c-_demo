@@ -13,7 +13,7 @@ HOW TO BUILD
     make
 
 tips:
-1.How to build with debug and release?
+1. How to build with debug and release?
 - release
 
 ```
