@@ -23,5 +23,5 @@ tips:
 - debug
 
 ```
-    cd build && cmake -DCMAKE_BUILD_TYPE=DEBUG ..
+    cd build && cmake -DCMAKE_BUILD_TYPE=Debug ..
 ```
